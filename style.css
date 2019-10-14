@@ -1,0 +1,312 @@
+html {
+    box-sizing:border-box;
+}
+*, *::before, *::after {box-sizing:inherit;}
+
+#container {
+    width:1200px;
+    margin:auto;
+   
+}
+.top{
+    display: flex;
+    justify-content: space-between;
+    font-family:sans-serif;
+}
+
+.logo > img{
+    width: 89px;
+
+}
+
+header {
+    background:white;
+    display:flex;
+    flex-direction: column;
+}
+
+.body {
+    display:grid;
+    grid-template-columns: 1fr 4fr;
+    font-family:sans-serif;
+}
+
+main {
+    height:100px;
+    background:white;
+    display:grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap:15px;
+}
+
+
+aside {
+    height:100px;
+    background:white;
+}
+
+.menu {
+    display:flex;
+    justify-content:space-between;
+    margin:30px 0;
+    align-items:baseline;
+    font-family: sans-serif;
+    border-bottom:2px solid gray;
+    font-size:13px;
+}
+
+.round {
+    display:flex;
+    justify-content: space-between;
+    font-family:sans-serif;
+    font-size:12px;
+    font-weight:bold;
+}
+
+.round >p{
+    display:flex;
+    border-radius: 25px;
+    background: rgba(238,163,126);
+    text-align: center;
+    padding: 23px;
+    line-height: 1.4px;
+    height: 18px;
+}
+
+.boxes { 
+    width:240px;
+    display:flex;
+    flex-direction:column;
+    cursor: pointer;
+}
+.boxes img {
+    width:100%;
+}
+
+.boxes h3 {
+    margin:0;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+    overflow:hidden;
+}
+
+.boxes p {
+    margin: 0;
+}
+
+/* .boxes:hover{
+    background: url("assets/heart.png") no-repeat;
+} */
+
+.desc {
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    font-size:14px;
+}
+
+li {
+    list-style:none;
+}
+
+button {
+    font-size: 14px;
+    border: 1px solid black;
+    background-color: white;
+    padding: 5px;
+    margin: 21px;
+    border-radius: 4px;
+    width: 68px;
+    height: 32px;
+}
+
+.start {
+    display:flex;
+    justify-content:space-between;
+    width:230px;
+}
+
+.whiskeysrch {
+    padding: 5px;
+    font-family: sans-serif;
+    font-size: 15px;
+    border-radius: 30px;
+    width: 693px;
+    padding: 5px 10px;
+    height: 40px;
+}
+
+.gft {
+    display:flex;
+    align-items:center;
+}
+
+.ct {
+    display:flex;
+    border: 1px solid gray;
+    border-top:0;
+    border-bottom:0;
+    border-right:0;
+    cursor:pointer;
+}
+
+.ct img{
+    width:25px;
+    height:25px;
+    cursor:pointer;
+}
+
+.ctg {
+    font-size: 13px;
+}
+.ctg >p{
+    text-indent: 20px;
+}
+
+
+.sell{
+    padding:5px;
+    margin:8px;
+    display:flex;
+    font-size:13px;
+}
+
+.rgstr {
+    padding:5px;
+    margin:8px;
+    display:flex;
+    font-size:13px;
+}
+
+.lsearch {
+    box-shadow: 0 1px 4px 0 rgba(34, 34, 34, 0.1) inset;
+    border-color: rgba(34, 34, 34, 0.15);
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 6px;
+    color: #222222;
+    font-family: inherit;
+    font-size: 13px;
+    line-height: 28px;
+    height: 33px;
+    outline: none;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    padding-left: 12px;
+    padding-right: 12px;
+    width: 33%;
+    margin:0;
+
+}
+
+.hsearch {
+    box-shadow: 0 1px 4px 0 rgba(34, 34, 34, 0.1) inset;
+    border-color: rgba(34, 34, 34, 0.15);
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 6px;
+    color: #222222;
+    font-family: inherit;
+    font-size: 13px;
+    line-height: 28px;
+    height: 33px;
+    outline: none;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    padding-left: 12px;
+    padding-right: 12px;
+    width: 33%;
+    margin:0;
+}
+
+.locate {
+    box-shadow: 0 1px 4px 0 rgba(34, 34, 34, 0.1) inset;
+    border-color: rgba(34, 34, 34, 0.15);
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 6px;
+    color: #222222;
+    display: block;
+    font-family: inherit;
+    font-size: 13px;
+    line-height: 28px;
+    height: 33px;
+    outline: none;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    padding-left: 12px;
+    padding-right: 12px;
+    width: 76%;
+    margin:0;
+}
+
+select {
+    background:transparent;
+    box-shadow: 0 1px 4px 0 rgba(34, 34, 34, 0.1) inset;
+    font-size:13px;
+    border:0px solid black;
+    width:76%;
+    outline: none;
+    color:gray;
+    font-family:sans-serif;
+    border-radius:2px;
+    line-height:28px;
+    height:33px;
+}
+
+#cbox {
+    height: 18px;
+    width: 18px;
+    min-width: 18px;
+    border-radius: 3px;
+}
+
+#rdo{
+    height: 18px;
+    width: 18px;
+    min-width: 18px;
+}
+
+.shipping{
+    font-size:13px;
+}
+
+.mtrtype{
+    font-size:13px;
+}
+
+.clrs{
+    font-size:13px;
+}
+
+.personal{
+    font-size:13px;
+}
+
+.party {
+    font-size:13px;
+}
+
+.spcldays{
+    font-size:13px;
+}
+
+.cntries{
+    font-size:13px;
+}
+
+.itype{
+    font-size:13px;
+}
+
+.pricing {
+    font-size:13px;
+}
+
+.odropt{
+    font-size:13px;
+}
+
+#cartphoto{
+    font-size:13px;
+}
